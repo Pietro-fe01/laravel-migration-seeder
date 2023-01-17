@@ -49,11 +49,15 @@
                             </div>
                             <div>
                                 <strong>In time:</strong>
-                                {{ $train->in_time ? 'True' : 'False' }}
+                                <span class="{{ $train->in_time ? 'text-success' : 'text-danger' }}">
+                                    {{ $train->in_time ? 'True' : 'False' }}
+                                </span>
                             </div>
                             <div>
                                 <strong>Cancelled:</strong>
-                                {{ $train->is_cancelled ? 'True' : 'False' }}
+                                <span class="{{ $train->is_cancelled ? 'text-danger' : 'text-success' }}">
+                                    {{ $train->is_cancelled ? 'True' : 'False' }}
+                                </span>
                             </div>
                         </li>
                     @endforeach
@@ -93,11 +97,15 @@
                             </div>
                             <div>
                                 <strong>In time:</strong>
-                                {{ $train->in_time ? 'True' : 'False' }}
+                                <span class="{{ $train->in_time ? 'text-success' : 'text-danger' }}">
+                                    {{ $train->in_time ? 'True' : 'False' }}
+                                </span>
                             </div>
                             <div>
                                 <strong>Cancelled:</strong>
-                                {{ $train->is_cancelled ? 'True' : 'False' }}
+                                <span class="{{ $train->is_cancelled ? 'text-danger' : 'text-success' }}">
+                                    {{ $train->is_cancelled ? 'True' : 'False' }}
+                                </span>
                             </div>
                         </li>
                     @endforeach

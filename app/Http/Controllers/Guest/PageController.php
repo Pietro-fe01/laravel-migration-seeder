@@ -12,7 +12,6 @@ class PageController extends Controller {
         $mytime = Carbon::now();
 
         $all_trains = Train::all();
-
         $trains = Train::where('starting_time', '>', $mytime->toDateTimeString()
         )->get();
 
