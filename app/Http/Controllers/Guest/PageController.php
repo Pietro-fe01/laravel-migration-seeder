@@ -31,7 +31,7 @@ class PageController extends Controller {
 
         $all_trains = Train::all();
 
-        $trains = Train::where('starting_time', '>', $mytime->toDateTimeString()
+        $trains = Train::where('starting_time', '>=', $mytime->toDateTimeString()
         )->get();
 
         return view('homepage', compact('trains', 'all_trains'));    
