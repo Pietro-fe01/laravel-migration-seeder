@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class PageController extends Controller {
-    public function index(){
+    public function new_record(){
         $new_train = new Train();
         $new_train->company = 'Italo-Nuovo Trasporto Viaggiatori';
         $new_train->starting_station = 'Milano Centrale';
@@ -20,6 +20,12 @@ class PageController extends Controller {
         $new_train->in_time = 1;
         $new_train->is_cancelled = 0;
         $new_train->save();
+
+        return view('new-record');
+    }
+
+    public function index(){
+        
 
         $mytime = Carbon::now();
 

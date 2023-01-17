@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index']);
+
+Route::get('/new-record', [PageController::class, 'new_record'])->name('new');

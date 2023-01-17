@@ -10,10 +10,13 @@
         @vite('resources/js/app.js')
     </head>
     <body class="bg-light">
+        <header class="text-center">
+            <h1>Homepage</h1>
+            <a href="{{ route('new') }}">Aggiungi nuovo record</a>
+        </header>
 
         <main>
             <div class="container">
-                <h1 class="text-center">Homepage</h1>
 
                 <h5>All trains :</h5>
                 <ul class="d-flex">
