@@ -19,6 +19,3 @@ class PageController extends Controller {
         return view('homepage', compact('trains', 'all_trains'));    
     }
 }
-
-// $mytime = Carbon\Carbon::now();
-// echo $mytime->toDateTimeString();

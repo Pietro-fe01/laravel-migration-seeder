@@ -21,31 +21,40 @@
                         <li class="mx-4 mb-4">
                             <div>
                                 <strong>Company:</strong>
-                                {{ $train->company }}</div>   
+                                {{ $train->company }}
+                            </div>   
                             <div>
                                 <strong>Starting station:</strong>
-                                {{ $train->starting_station }}</div>  
+                                {{ $train->starting_station }}
+                            </div>  
                             <div>
                                 <strong>Arrival station:</strong>
-                                {{ $train->arrival_station }}</div>
+                                {{ $train->arrival_station }}
+                            </div>
                             <div>
                                 <strong>Starting time:</strong>
-                                {{ $train->starting_time }}</div>  
+                                {{ $train->starting_time }}
+                            </div>  
                             <div>
                                 <strong>Arrival time:</strong>
-                                {{ $train->arrival_time }}</div>
+                                {{ $train->arrival_time }}
+                            </div>
                             <div>
                                 <strong>Unique train code:</strong>
-                                {{ $train->unique_code }}</div>
+                                {{ $train->unique_code }}
+                            </div>
                             <div>
                                 <strong>Carriages' number:</strong>
-                                {{ $train->carriages_num }}</div>
+                                {{ $train->carriages_num }}
+                            </div>
                             <div>
                                 <strong>In time:</strong>
-                                {{ $train->in_time }}</div>
+                                {{ $train->in_time ? 'True' : 'False' }}
+                            </div>
                             <div>
                                 <strong>Cancelled:</strong>
-                                {{ $train->is_cancelled }}</div>
+                                {{ $train->is_cancelled ? 'True' : 'False' }}
+                            </div>
                         </li>
                     @endforeach
                 </ul>
@@ -56,31 +65,40 @@
                         <li class="mx-4 mb-4">
                             <div>
                                 <strong>Company:</strong>
-                                {{ $train->company }}</div>   
+                                {{ $train->company }}
+                            </div>   
                             <div>
                                 <strong>Starting station:</strong>
-                                {{ $train->starting_station }}</div>  
+                                {{ $train->starting_station }}
+                            </div>  
                             <div>
                                 <strong>Arrival station:</strong>
-                                {{ $train->arrival_station }}</div>
+                                {{ $train->arrival_station }}
+                            </div>
                             <div>
                                 <strong>Starting time:</strong>
-                                {{ $train->starting_time }}</div>  
+                                {{ $train->starting_time }}
+                            </div>  
                             <div>
                                 <strong>Arrival time:</strong>
-                                {{ $train->arrival_time }}</div>
+                                {{ $train->arrival_time }}
+                            </div>
                             <div>
                                 <strong>Unique train code:</strong>
-                                {{ $train->unique_code }}</div>
+                                {{ $train->unique_code }}
+                            </div>
                             <div>
                                 <strong>Carriages' number:</strong>
-                                {{ $train->carriages_num }}</div>
+                                {{ $train->carriages_num }}
+                            </div>
                             <div>
                                 <strong>In time:</strong>
-                                {{ $train->in_time }}</div>
+                                {{ $train->in_time ? 'True' : 'False' }}
+                            </div>
                             <div>
                                 <strong>Cancelled:</strong>
-                                {{ $train->is_cancelled }}</div>
+                                {{ $train->is_cancelled ? 'True' : 'False' }}
+                            </div>
                         </li>
                     @endforeach
                 </ul>
