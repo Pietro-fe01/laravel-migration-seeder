@@ -4,13 +4,21 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use App\Models\Train;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
-{
+class PageController extends Controller {
     public function index(){
-        $trains = Train::all();
+        $mytime = Carbon::now();
 
-        return view('homepage', compact('trains'));    
+        $all_trains = Train::all();
+
+        $trains = Train::where('starting_time', '>', $mytime->toDateTimeString()
+        )->get();
+
+        return view('homepage', compact('trains', 'all_trains'));    
     }
 }
+
+// $mytime = Carbon\Carbon::now();
+// echo $mytime->toDateTimeString();
