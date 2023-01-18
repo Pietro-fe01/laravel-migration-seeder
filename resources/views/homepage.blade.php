@@ -12,14 +12,13 @@
     <body class="bg-light">
         <header class="text-center">
             <h1>Homepage</h1>
-            <a href="{{ route('new') }}">Aggiungi nuovo record</a>
         </header>
 
         <main>
             <div class="container">
 
                 <h5>All trains :</h5>
-                <ul class="d-flex">
+                <ul class="d-flex flex-wrap">
                     @foreach ($all_trains as $train)
                         <li class="mx-4 mb-4">
                             <div>
@@ -67,7 +66,7 @@
                 </ul>
 
                 <h5>Starting trains from now :</h5>
-                <ul class="d-flex">
+                <ul class="d-flex flex-wrap">
                     @foreach ($trains as $train)
                         <li class="mx-4 mb-4">
                             <div>
