@@ -21,6 +21,10 @@ class TrainsTableSeeder extends Seeder
                 $newTrain->company = $faker->randomElement(['Trenitalia SPA', 'Italo-Nuovo Trasporto Viaggiatori', 'Trenord SPA', 'Interjet Srl']);
                 $newTrain->starting_station = $faker->city();
                 $newTrain->arrival_station = $faker->city();
+                // Per generare stazione di partenza e arrivo diversephp artisan make:seeder
+                while($newTrain->starting_station = $faker->city() === $newTrain->arrival_station = $faker->city()){
+                    $newTrain->arrival_station = $faker->city();
+                }
                 $newTrain->starting_time = $faker->dateTimeBetween('+0 days', '+2 years');
                 $newTrain->arrival_time = $faker->dateTimeBetween($newTrain->starting_time, '+2 years');;
                 $newTrain->unique_code = $faker->randomNumber(5, true);
